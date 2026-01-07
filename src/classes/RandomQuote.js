@@ -10,13 +10,19 @@ class RandomQuote {
   }
 
   static async getRandomQuoteViaAPI() {
-    const url = 'https://quoteslate.vercel.app/api/quotes/random';
+    const url = 'https://quoteslate.vercel.app/api/quotes/random?count=5';
     const options = { headers: { 'Content-Type': 'application/json' } };
     try {
       const response = await fetch(url, options);
-      const { id, quote, author } = await response.json();
+      const quotes = await response.json();
+      if (Array.isArray(quotes) && quotes.length === 5) {
+        const content = quotes[0];
+        const { id, quote, author } = content;
+        if (id && quote && author) {
+          return new Quote(id, quote, author);
+        }
+      }
       //resolves promise to Quote (promise becomes "fulfilled")
-      return new Quote(id, quote, author);
     } catch (error) {
       console.error(error);
     }
