@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1105px;
   margin: 50px auto;
   text-align: center;
   padding: 20px;
@@ -35,7 +35,7 @@ body {
 
 .btn {
   padding: 13px 25px;
-  margin: 0 10px;
+  margin: 10px;
   background-color: blue;
   font-size: 30px;
   color: white;
@@ -70,6 +70,13 @@ body {
   background-color: darkgreen;
 }
 
+.btn-ternary {
+  background-color: orange;
+  color: black;
+}
+.btn-ternary:hover {
+  background-color: darkgoldenrod;
+}
 .btn-danger:hover {
   background-color: red;
   color: white;
