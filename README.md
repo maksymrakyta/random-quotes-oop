@@ -15,7 +15,7 @@ This project consists of a client-side Vanilla JavaScript app and a server-side 
    `npm install`
 5. Run server in the development mode with hot-reload feature:
    `npm run dev`
-6. Server will be running at the `http://localhost:3000`
+6. Server will be running at the http://localhost:3000
 
 ### Run client
 
@@ -36,13 +36,13 @@ This project consists of a client-side Vanilla JavaScript app and a server-side 
 5. Run server in the development mode with hot-reload feature:
    `npm start`
 6. Configure hosting server where you run application to forward all requests to the http://localhost:3000
-7. Get assigned by the hosting provider URL for your backend API server for example `https://random-quotes-api.com`
+7. Get assigned by the hosting provider URL for your backend API server for example https://random-quotes-api.com
 
 ### Run client
 
 1. There is no need to builad the client as it already contains HTML, CSS and JS file.
-2. In the `client/src/config.js` replace `http://localhost:3000` which URL assign to the server API in the step 7, in the previous section. For example `https://random-quotes-api.com`
+2. In the `client/src/config.js` replace http://localhost:3000 which URL assign to the server API in the step 7, in the previous section. For example `https://random-quotes-api.com`
 3. Host all client files from the `client` subfolder on the public web server.
 4. Get assigned by the hosting provider URL for your client frontend application.
-   For example: `https://random-quotes-frontend.com`
-5. Open in the web-browser: `https://random-quotes-frontend.com`.
+   For example: https://random-quotes-frontend.com
+5. Open in the web-browser: https://random-quotes-frontend.com.
